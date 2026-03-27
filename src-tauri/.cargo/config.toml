@@ -1,0 +1,19 @@
+[workspace]
+resolver = "2"
+
+[workspace.lints.clippy]
+# Allow
+pedantic = "allow"
+missing_errors_doc = "allow"
+missing_panics_doc = "allow"
+module_name_repetitions = "allow"
+
+# Deny
+cargo = "deny"
+multiple_crate_versions = "allow"
+
+# Warn
+all = "warn"
+unused_unit = "warn"
+unnecessary_wraps = "warn"
+redundant_closure = "warn"
